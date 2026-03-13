@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Prevenção Infantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- Screen 1: Hook -->
+        <section id="screen-start" class="screen active">
+            <div class="content-wrapper">
+                <div class="badge">Quiz Rápido</div>
+                <h1 class="main-title">Você saberia o que fazer se seu filho tivesse febre <span class="highlight">agora?</span></h1>
+                <p class="subtitle">Descubra se você está realmente preparada para os imprevistos comuns da saúde infantil (leva menos de 60 segundos).</p>
+                
+                <div class="illustrations">
+                    <div class="circles">
+                        <div class="circle c1"></div>
+                        <div class="circle c2"></div>
+                        <div class="circle c3"></div>
+                    </div>
+                </div>
+
+                <button id="btn-start" class="primary-btn pulse">Começar o teste</button>
+                <p class="disclaimer">🔒 100% gratuito e seguro</p>
+            </div>
+        </section>
+
+        <!-- Screen 2: Quiz -->
+        <section id="screen-quiz" class="screen">
+            <div class="quiz-header">
+                <button id="btn-back" class="icon-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="step-indicator"><span id="current-step">1</span>/5</div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text" class="question-title">Pergunta aqui?</h2>
+                <div id="options-container" class="options-group">
+                    <!-- Options injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 3: Analyzing -->
+        <section id="screen-loading" class="screen">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <h2 class="loading-text">Analisando suas respostas...</h2>
+                <p class="loading-sub">Gerando seu perfil de mãe...</p>
+            </div>
+        </section>
+
+        <!-- Screen 4: Results & Offer -->
+        <section id="screen-result" class="screen">
+            <div class="result-wrapper">
+                <div class="result-card">
+                    <h2 class="result-title">Resultado gerado!</h2>
+                    <p class="result-message">Você é uma mãe extremamente cuidadosa e amorosa, mas <strong>pode estar despreparada</strong> para algumas situações comuns de saúde infantil.</p>
+                    <p class="result-explanation">Não se preocupe, você não está sozinha. A maioria das mães de primeira viagem sente essa mesma insegurança e medo de errar na hora do desespero.</p>
+                </div>
+
+                <div class="offer-container">
+                    <p class="offer-text">Pensando nisso, criamos um guia simples e direto ao ponto que mostra exatamente <strong>o que fazer nas principais situações de saúde infantil</strong>, sem complicação.</p>
+                    
+                    <a href="https://pay.kiwify.com.br/6tNGJyA" class="primary-btn cta-btn">
+                        Quero acessar o manual da Mãe Prevenida
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
